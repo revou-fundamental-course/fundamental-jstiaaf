@@ -1,1 +1,95 @@
 /* Ini CSS */
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+main{
+    padding: 32px
+}
+
+.logo-icon{
+    height: 50px;
+    width: 50px;
+
+    /* For Image icon */
+    background-image: url(../assets/logo.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+nav>a{
+    padding-left: 32px;
+    padding-right: 32px;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-container a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.banner-container{
+    height: 350px;
+    width: 100%;
+}
+
+.banner-item{
+    height: 350px;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-content{
+    display: flex;
+    justify-content: space-evenly
+}
+
+.profile-item{
+    text-align: center
+}
+
+.profile-icon{
+    height: 50px;
+    width: 50px;
+
+    /* For Image icon */
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profile-1{
+    background-image: url(../assets/instagram.jpg);
+}
+
+.profile-2{
+    background-image: url(../assets/x.jpg);
+}
+
+.profile-3{
+    background-image: url(../assets/gmail.jpg);
+}
+
+@media only screen and (max-width: 600px){
+    .nav-container {
+        flex-direction: column;
+    }
+}
+
+.logo-icon{
+    margin-bottom: 14px;
+}
+
+.profile-content{
+    background-color: antiquewhite;
+}
